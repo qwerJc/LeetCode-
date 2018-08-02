@@ -8,5 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
+let testArr  = ArrayPractice()
+//testArr.testRemoveDuplicates()
+testArr.testBuyAndSellStockChance()
