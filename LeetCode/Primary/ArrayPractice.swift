@@ -67,13 +67,87 @@ class ArrayPractice {
         }
         return sum
     }
-    
+
     func testBuyAndSellStockChance() -> Void {
         let result = buyAndSellStockChance(prices: [5,2,3,2,6,6,2,9,1,0,7,4,5,0])
         print(result)
     }
     
-    private func rotateArray(_ nums: inout [Int], _ k: Int) {
-        
+    //**************************【旋转数组】**************************
+    // 方法1（13.33%）
+    private func rotateArray1(_ nums: inout [Int], _ k: Int) {
+        var count:Int
+        if k > nums.count {
+            count = nums.count - k%nums.count
+        }else{
+            count = nums.count - k
+        }
+        while count>0 {
+            let item = nums.first!
+            nums.removeFirst()
+            nums.append(item)
+            count = count - 1
+        }
+    }
+    
+    // 方法2（22.0%）
+    private func rotateArray2(_ nums: inout [Int], _ k: Int) {
+        var index:Int
+        if k > nums.count {
+            index = k % nums.count
+        }else{
+            index = k
+        }
+        while index > 0 {
+            nums.insert(nums.removeLast(), at: 0)
+            index = index - 1
+        }
+    }
+    
+    // 方法3（24.67%）
+    private func rotateArray3(_ nums: inout [Int], _ k: Int) {
+        var moveCount = k % nums.count
+        if moveCount > nums.count/2 {
+            // 应该左移
+            moveCount = nums.count - moveCount
+            while moveCount > 0 {
+                nums.append( nums.removeFirst())
+                moveCount = moveCount - 1
+            }
+        }else{
+            // 正常右移
+            while moveCount > 0 {
+                nums.insert(nums.removeLast(), at: 0)
+                moveCount = moveCount - 1
+            }
+        }
+    }
+    
+    // 方法4 (66.7%)
+    private func rotateArray4(_ nums: inout [Int], _ k: Int) {
+        var newArr = [Int]()
+        var index:Int
+        if k > nums.count {
+            index = k % nums.count
+        }else{
+            index = k
+        }
+        while index > 0 {
+            newArr.append(nums.removeLast())
+            index = index - 1
+            
+        }
+        newArr.reverse()
+        newArr.append(contentsOf: nums)
+        nums = newArr
+    }
+    
+    func testRotateArray() -> Void {
+        var arr = [1,2,3,4,5,6,7]
+//        rotateArray1(&arr, 3)
+//        rotateArray2(&arr, 3)
+//        rotateArray3(&arr, 3)
+        rotateArray4(&arr, 3)
+        print(arr)
     }
 }

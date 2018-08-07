@@ -10,4 +10,5 @@ import Foundation
 
 let testArr  = ArrayPractice()
 //testArr.testRemoveDuplicates()
-testArr.testBuyAndSellStockChance()
+//testArr.testBuyAndSellStockChance()
+testArr.testRotateArray()
