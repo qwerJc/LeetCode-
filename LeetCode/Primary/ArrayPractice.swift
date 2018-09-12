@@ -10,7 +10,7 @@ import Foundation
 
 class ArrayPractice {
     
-    //**************************【26. 删除排序数组中的重复项】(68.82%)**************************
+    //**************************【1. 删除排序数组中的重复项】(68.82%)**************************
     
     private func removeDuplicates(nums:inout [Int]) -> Int {
         
@@ -33,7 +33,7 @@ class ArrayPractice {
         
     }
     
-    //**************************【买卖股票的最佳时机2】(18.79%)**************************
+    //**************************【2. 买卖股票的最佳时机2】(18.79%)**************************
     func buyAndSellStockChance(prices: [Int]) -> Int {
         var minValue:Int? = nil
         var maxValue:Int? = nil
@@ -73,7 +73,7 @@ class ArrayPractice {
         print(result)
     }
     
-    //**************************【旋转数组】**************************
+    //**************************【3. 旋转数组】**************************
     // 方法1（13.33%）
     private func rotateArray1(_ nums: inout [Int], _ k: Int) {
         var count:Int
@@ -150,4 +150,22 @@ class ArrayPractice {
         rotateArray4(&arr, 3)
         print(arr)
     }
+    //**************************【4. 存在重复】**************************
+    private func containsDuplicate(_ nums: [Int]) -> Bool {
+        var unduplicatedArr = [Int]()
+        for (index,item) in nums.enumerated() {
+            if index == 0{
+                unduplicatedArr.append(item)
+            }else{
+                for unduplicatedItem in unduplicatedArr {
+                    if unduplicatedItem == item{
+                        return true
+                    }
+                }
+                unduplicatedArr.append(item)
+            }
+        }
+        return false
+    }
+    
 }
