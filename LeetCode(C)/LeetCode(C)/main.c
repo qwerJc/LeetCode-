@@ -8,35 +8,7 @@
 
 #include <stdio.h>
 #include "Primary/Primary_Array.h"
-
-int try(char** board, int boardSize, int* boardColSize) {
-    int i, j, r, c, row[9], col[9], martix[9];
-    for (i = 0; i < boardSize; i++) {
-      memset(row, 0, sizeof(row));
-      memset(col, 0, sizeof(col));
-      memset(martix, 0, sizeof(martix));
-      for (j = 0; j < boardColSize[i]; j++) {
-        // 行
-        if (board[i][j] != '.') {
-          if (row[board[i][j] - '1'] == 1) return 0;
-          row[board[i][j] - '1']++;
-        }
-        // 列
-        if (board[j][i] != '.') {
-          if (col[board[j][i] - '1'] == 1) return 0;
-          col[board[j][i] - '1']++;
-        }
-        // 九宫格
-        r = 3 * (i / 3) + j / 3;
-        c = (i % 3) * 3 + j % 3;
-        if (board[r][c] != '.') {
-          if (martix[board[r][c] - '1'] == 1) return 0;
-          martix[board[r][c] - '1']++;
-        }
-      }
-    }
-    return 1;
-}
+#include "Primary_String.h"
 
 void testValidSudoku(void) {
 //    int a[2][2] = {1,1,1,1};
@@ -83,13 +55,11 @@ void testValidSudoku(void) {
     
     int colSize[9] = {9};
     
-//    isValidSudoku(board, 9, colSize);
-    try(board, 9, &colSize);
 }
 
 
 // 函数声明
-void testPrimary(void) {
+void testPrimaryArray(void) {
 //    int arr1[3] = {4,9,5};
 //    int arr2[5] = {9,4,9,8,4};
 //    int arr3[5] = {9,4,9,9,9};
@@ -108,14 +78,31 @@ void testPrimary(void) {
 //    moveZeroes(arr2, 5);
 //    printIntArrWithoutLineBreak(arrZero1, 5);
     
-    testValidSudoku();
+//    testValidSudoku();
+    
 }
 
+void testString(void) {
+    /** 反转字符串 */
+//    char s[6] = {'H','a','n','n','a','h'};
+//    reverseString(s, 6);
+    
+    /** 整数反转 */
+//    reverse(123);
+//    reverse(-123);
+//    reverse(120);
+//    reverse(1534236469);
+    
+    /** 字符串中唯一字符 */
+    char *s = "leetcode";
+    firstUniqChar(s);
+}
 
 #pragma mark - main
 int main(int argc, const char * argv[]) {
-
-    testPrimary();
+//    testPrimaryArray();
     
+    testString();
+
     return 0;
 }

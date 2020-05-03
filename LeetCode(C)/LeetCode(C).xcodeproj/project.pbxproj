@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		322FD4F62436F0A8004F725C /* Primary_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 322FD4F52436F0A8004F725C /* Primary_Array.c */; };
+		32602E5D245DA9F80003A93B /* Primary_String.c in Sources */ = {isa = PBXBuildFile; fileRef = 32602E5C245DA9F80003A93B /* Primary_String.c */; };
 		32D13AE121CCD6CB0039AE78 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 32D13AE021CCD6CB0039AE78 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 		322FD4F42436F0A8004F725C /* Primary_Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Primary_Array.h; sourceTree = "<group>"; };
 		322FD4F52436F0A8004F725C /* Primary_Array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Primary_Array.c; sourceTree = "<group>"; };
 		322FD4FB243C1E54004F725C /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		32602E5B245DA9F80003A93B /* Primary_String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Primary_String.h; sourceTree = "<group>"; };
+		32602E5C245DA9F80003A93B /* Primary_String.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Primary_String.c; sourceTree = "<group>"; };
 		32D13ADD21CCD6CB0039AE78 /* LeetCode(C) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode(C)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D13AE021CCD6CB0039AE78 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +50,8 @@
 			children = (
 				322FD4F42436F0A8004F725C /* Primary_Array.h */,
 				322FD4F52436F0A8004F725C /* Primary_Array.c */,
+				32602E5B245DA9F80003A93B /* Primary_String.h */,
+				32602E5C245DA9F80003A93B /* Primary_String.c */,
 			);
 			path = Primary;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 			files = (
 				322FD4F62436F0A8004F725C /* Primary_Array.c in Sources */,
 				32D13AE121CCD6CB0039AE78 /* main.c in Sources */,
+				32602E5D245DA9F80003A93B /* Primary_String.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
