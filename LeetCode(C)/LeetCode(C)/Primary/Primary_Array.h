@@ -27,4 +27,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize);
 
 /** 有效的数独 */
 int isValidSudoku(char** board, int boardSize, int* boardColSize);
+
+/** 旋转图像 */
+void rotate(int** matrix, int matrixSize, int* matrixColSize);
 #endif /* Primary_Array_h */
