@@ -8,55 +8,30 @@
 
 #include <stdio.h>
 #include "Primary/Primary_Array.h"
+
 #include "Primary_String.h"
 
-void testValidSudoku(void) {
-//    int a[2][2] = {1,1,1,1};
-    /** 有效的数独*/
-    char board[9][9] = {{'5','3','.','.','7','.','.','.','.'},{'6','.','.','1','9','5','.','.','.'},{'.','9','8','.','.','.','.','6','.'},{'8','.','.','.','6','.','.','.','3'},{'4','.','.','8','.','3','.','.','1'},{'7','.','.','.','2','.','.','.','6'},{'.','6','.','.','.','.','2','8','.'},{'.','.','.','4','1','9','.','.','5'},{'.','.','.','.','8','.','.','7','9'}};
-    
-//    char board[9][9] = {{'.'},};
-    for (int i = 0; i<9; i++) {
-        for (int j = 0; j<9; j++) {
-            printf("%c",board[i][j]);
-        }
-        printf("\n");
-    }
-//    board[0][0] = '5';
-//    board[0][1] = '3';
-//    board[0][4] = '7';
-//    board[1][0] = '6';
-//    board[1][3] = '1';
-//    board[1][4] = '9';
-//    board[1][5] = '5';
-//    board[2][1] = '9';
-//    board[2][2] = '8';
-//    board[2][7] = '6';
-//    board[3][0] = '8';
-//    board[3][4] = '6';
-//    board[3][8] = '3';
-//    board[4][0] = '4';
-//    board[4][3] = '8';
-//    board[4][5] = '3';
-//    board[4][8] = '1';
-//    board[5][1] = '7';
-//    board[5][4] = '2';
-//    board[5][8] = '6';
-//    board[6][1] = '6';
-//    board[6][6] = '2';
-//    board[6][7] = '8';
-//    board[7][3] = '4';
-//    board[7][4] = '1';
-//    board[7][5] = '9';
-//    board[7][5] = '9';
-//    board[8][4] = '8';
-//    board[8][7] = '7';
-//    board[8][8] = '9';
-    
-    int colSize[9] = {9};
-    
-}
 
+void testValidSudoku(void) {
+    char board[10][10] = {{'9','3','.','.','7','.','.','.','.'},{'6','.','.','1','9','5','.','.','.'},{'.','9','8','.','.','.','.','6','.'},{'8','.','.','.','6','.','.','.','3'},{'4','.','.','8','.','3','.','.','1'},{'7','.','.','.','2','.','.','.','6'},{'.','6','.','.','.','.','2','8','.'},{'.','.','.','4','1','9','.','.','5'},{'.','.','.','.','8','.','.','7','9'}};
+    
+    char  **s ;
+    s = (char **) malloc(sizeof(char**));
+    for (int i = 0; i<9; i++) {
+        *(s+i) =  board[i];
+    }
+    
+    for (int i1 = 0; i1<9; i1++) {
+        for (int j1 = 0; j1<9; j1++) {
+            printf(" %c ",s[i1][j1]);
+        }
+        printf("\n\n");
+    }
+    
+    int colSize[] = {9,9,9,9,9,9,9,9,9};
+    
+    isValidSudoku(s, 9, colSize);
+}
 
 // 函数声明
 void testPrimaryArray(void) {
@@ -77,9 +52,18 @@ void testPrimaryArray(void) {
 //    int arrZero[15] = {0,5,0,1,0,0,0,0,3,7,0,0,12,0,0};
 //    moveZeroes(arr2, 5);
 //    printIntArrWithoutLineBreak(arrZero1, 5);
-    
+
+    // 有效的数独
 //    testValidSudoku();
     
+    // 旋转图像
+//    int input[3][3] = {1,2,3,4,5,6,7,8,9};
+//    int lenght[3] = {3,3,3};
+//    int **in = (int**)malloc(sizeof(int**));
+//    for (int i = 0; i<3; i++) {
+//        in[i] = input[i];
+//    }
+//    rotate(in, 3, lenght);
 }
 
 void testString(void) {
@@ -94,8 +78,8 @@ void testString(void) {
 //    reverse(1534236469);
     
     /** 字符串中唯一字符 */
-    char *s = "leetcode";
-    firstUniqChar(s);
+//    char *s = "leetcode";
+//    firstUniqChar(s);
 }
 
 #pragma mark - main

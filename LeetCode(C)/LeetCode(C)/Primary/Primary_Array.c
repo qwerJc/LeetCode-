@@ -104,38 +104,38 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 
 int isValidSudoku(char** board, int boardSize, int *boardColSize) {
     
-    // 一维数组9代表9行，二维数组做hash用
-    int rowHash[9][9] = {0};
-    int colHash[9][9] = {0};
-    int sBox[9][9] = {0};
+    // rowHash数组的每一个item为对应位置元素的按位与
+    int rowHash[9] = {0};
+    int colHash[9] = {0};
+    int sBox[9] = {0};
     
     for (int i = 0; i<boardSize; i++) {
         for (int j = 0; j< boardColSize[i]; j++) {
             if(board[i][j] == '.') {
                 continue;
             } else {
-                int index = board[i][j] - '1';
-                
+                int diff = board[i][j] - '1';
+                int value = (1<<diff);
                 // 判断 行row
-                if (rowHash[i][index] == 0) {
-                    rowHash[i][index] = 1;
-                } else {
+                if (rowHash[i]&value) {
                     return 0;
+                } else {
+                    rowHash[i] = rowHash[i] | value;
                 }
                 
                 // 判断列 col
-                if (colHash[j][index] == 0) {
-                    colHash[j][index] = 1;
-                } else {
+                if (colHash[j]&value) {
                     return 0;
+                } else {
+                    colHash[j] = colHash[j] | value;
                 }
                 
-                int inexSBox = i/3 + j/3;
+                int inexSBox = 3*(i/3) + j/3;
                 // 判断3x3
-                if (sBox[inexSBox][index]==0) {
-                    sBox[inexSBox][index] = 1;
-                } else {
+                if (sBox[inexSBox]&value) {
                     return 0;
+                } else {
+                    sBox[inexSBox] = sBox[inexSBox] | value;
                 }
             }
         }
@@ -143,3 +143,44 @@ int isValidSudoku(char** board, int boardSize, int *boardColSize) {
     return 1;
 }
 
+#pragma mark - 旋转图像
+// Tips：
+//      1、先转置，再横向翻转
+//      2、旋转4个矩形
+void rotate(int** matrix, int matrixSize, int* matrixColSize) {
+    for (int i = 0; i< matrixSize; i++) {
+        for (int j = 0 ; j<matrixColSize[i]; j++) {
+            printf(" %d ",matrix[i][j]);
+        }
+        printf("\n");
+    }
+    
+    printf("-------- \n");
+    
+    int centerX = matrixSize/2; // 这样就不用判断奇偶了（matrixSize%2==0? matrixSize/2 : matrixSize/2-1）
+    int centerY = (matrixSize+1)/2;
+    
+    for (int i = 0; i< centerX; i++) {
+        for (int j = 0 ; j< centerY; j++) {
+            
+            int temp = matrix[i][j];
+            
+            // 以下遵循 （x,y）-> (n-y-1,x);
+            matrix[i][j] = matrix[matrixSize-j-1][i];
+            
+            matrix[matrixSize-j-1][i] = matrix[matrixSize-i-1][matrixSize-j-1];
+            
+            matrix[matrixSize-i-1][matrixSize-j-1] = matrix[j][matrixSize-i-1];
+            
+            matrix[j][matrixSize-i-1] = temp;
+            
+        }
+    }
+    
+    for (int i = 0; i< matrixSize; i++) {
+        for (int j = 0 ; j<matrixColSize[i]; j++) {
+            printf(" %d ",matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
