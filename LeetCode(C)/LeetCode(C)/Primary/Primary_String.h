@@ -20,4 +20,16 @@ int reverse(int x);
 #pragma mark - 字符串中的第一个唯一字符
 int firstUniqChar(char * s);
 
+#pragma mark - 有效的字母异位词（所有字符出现频率相同）
+int isAnagram(char * s, char * t);
+
+#pragma mark - 验证回文字符串
+int isPalindrome(char * s);
+
+#pragma mark - 字符串转换整数（atoi）
+int myAtoi(char * str);
+
+#pragma mark - 实现 strStr()
+int strStr(char * haystack, char * needle);
+
 #endif /* Primary_String_h */

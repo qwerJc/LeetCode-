@@ -10,7 +10,7 @@
 #include "Primary/Primary_Array.h"
 
 #include "Primary_String.h"
-
+#include "List.h"
 
 void testValidSudoku(void) {
     char board[10][10] = {{'9','3','.','.','7','.','.','.','.'},{'6','.','.','1','9','5','.','.','.'},{'.','9','8','.','.','.','.','6','.'},{'8','.','.','.','6','.','.','.','3'},{'4','.','.','8','.','3','.','.','1'},{'7','.','.','.','2','.','.','.','6'},{'.','6','.','.','.','.','2','8','.'},{'.','.','.','4','1','9','.','.','5'},{'.','.','.','.','8','.','.','7','9'}};
@@ -80,13 +80,60 @@ void testString(void) {
     /** 字符串中唯一字符 */
 //    char *s = "leetcode";
 //    firstUniqChar(s);
+    
+    /** 有效的字母异位词 */
+//    isAnagram("anagram", "nagaram");
+//    isAnagram("ab", "a");
+    
+    /** 验证回文字符串 */
+//    isPalindrome("race a car");
+//    isPalindrome("A man, a plan, a canal: Panama");
+    
+    /** 字符串转换整数 (atoi)*/
+    printf("%d \n", myAtoi("+-2"));
+    printf("%d \n", myAtoi("   -42"));
+    printf("%d \n", myAtoi("4193 with words"));
+    printf("%d \n", myAtoi("words and 987"));
+    printf("%d \n", myAtoi("-91283472332"));
+    printf("%d \n", myAtoi("-000000000000000000000000000000000000000000000000001"));
+    printf("%d \n", myAtoi("   +0 123"));
+    printf("%d \n", myAtoi("-2147483648"));
+    printf("%d \n", myAtoi("-A1"));
 }
 
+void testList(void) {
+    int arr1[5] = {1,2,3,4,5};
+    int arr2[2] = {1,2};
+    int arr3[1] = {1};
+    
+    
+    // 删除节点
+//struct ListNode *list1 = createListWithTailInsert(arr1, 5);
+//logList(list1);
+//    struct ListNode *p = list1;
+//    while (p->next != NULL) {
+//        p = p->next;
+//    }
+//    deleteNode(p);
+//    logList(list1);
+    
+    // 删除倒数第n个节点
+    struct ListNode *list2 = createListWithHeadInsert(arr2, 2);
+    logList(list2);
+    struct ListNode *newList2 = removeNthFromEnd(list2, 1);
+    logList(newList2);
+    struct ListNode *list3 = createListWithHeadInsert(arr3, 1);
+    logList(list3);
+    struct ListNode *newList3 = removeNthFromEnd(list3, 1);
+    logList(newList3);
+}
 #pragma mark - main
 int main(int argc, const char * argv[]) {
 //    testPrimaryArray();
     
-    testString();
+//    testString();
+    
+    testList();
 
     return 0;
 }
