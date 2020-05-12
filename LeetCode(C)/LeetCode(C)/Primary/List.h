@@ -34,4 +34,8 @@ void deleteNode(struct ListNode* node);
 
 /** 删除链表的倒数第N个节点 */
 struct ListNode* removeNthFromEnd(struct ListNode* head, int n);
+
+/** 反转链表 */
+struct ListNode* reverseList(struct ListNode* head);
+
 #endif /* List_h */

@@ -103,8 +103,13 @@ void testString(void) {
 
 void testList(void) {
     int arr1[5] = {1,2,3,4,5};
+    struct ListNode *list1 = createListWithHeadInsert(arr1, 5);
+    
     int arr2[2] = {1,2};
     int arr3[1] = {1};
+    
+    int arr4[0] = {};
+    struct ListNode *list4 = createListWithHeadInsert(arr4, 0);
     
     
     // 删除节点
@@ -118,14 +123,27 @@ void testList(void) {
 //    logList(list1);
     
     // 删除倒数第n个节点
-    struct ListNode *list2 = createListWithHeadInsert(arr2, 2);
-    logList(list2);
-    struct ListNode *newList2 = removeNthFromEnd(list2, 1);
-    logList(newList2);
-    struct ListNode *list3 = createListWithHeadInsert(arr3, 1);
-    logList(list3);
-    struct ListNode *newList3 = removeNthFromEnd(list3, 1);
-    logList(newList3);
+
+//    struct ListNode *newList1 = removeNthFromEnd(list1, 2);
+//    logList(newList1);
+//    
+//    struct ListNode *list2 = createListWithHeadInsert(arr2, 2);
+//    logList(list2);
+//    struct ListNode *newList2 = removeNthFromEnd(list2, 1);
+//    logList(newList2);
+//    
+//    struct ListNode *list3 = createListWithHeadInsert(arr3, 1);
+//    logList(list3);
+//    struct ListNode *newList3 = removeNthFromEnd(list3, 1);
+//    logList(newList3);
+    
+//    logList(list1);
+//    struct ListNode *newList1 = reverseList(list1);
+//    logList(newList1);
+    
+    logList(list4);
+    struct ListNode *newList4 = reverseList(list4);
+    logList(newList4);
 }
 #pragma mark - main
 int main(int argc, const char * argv[]) {
