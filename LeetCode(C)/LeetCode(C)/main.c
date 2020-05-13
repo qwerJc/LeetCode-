@@ -103,13 +103,22 @@ void testString(void) {
 
 void testList(void) {
     int arr1[5] = {1,2,3,4,5};
-    struct ListNode *list1 = createListWithHeadInsert(arr1, 5);
+    struct ListNode *list1 = createListWithTailInsert(arr1, 5);
     
     int arr2[2] = {1,2};
+    struct ListNode *list2 = createListWithTailInsert(arr2, 2);
+    
     int arr3[1] = {1};
+    struct ListNode *list3 = createListWithHeadInsert(arr3, 1);
     
     int arr4[0] = {};
     struct ListNode *list4 = createListWithHeadInsert(arr4, 0);
+    
+    int arr5[8] = {1,3,2,4,4,2,3,1};
+    struct ListNode *list5 = createListWithHeadInsert(arr5, 8);
+    
+    int arr6[9] = {1,3,2,4,5,4,8,3,1};
+    struct ListNode *list6 = createListWithHeadInsert(arr6, 9);
     
     
     // 删除节点
@@ -123,7 +132,6 @@ void testList(void) {
 //    logList(list1);
     
     // 删除倒数第n个节点
-
 //    struct ListNode *newList1 = removeNthFromEnd(list1, 2);
 //    logList(newList1);
 //    
@@ -141,9 +149,28 @@ void testList(void) {
 //    struct ListNode *newList1 = reverseList(list1);
 //    logList(newList1);
     
+//    // 反转链表
+//    logList(list4);
+//    struct ListNode *newList4 = reverseList(list4);
+//    logList(newList4);
+    
+//    // 合并链表
+//    logList(list1);
+//    logList(list2);
+//    struct ListNode *newList5 = mergeTwoLists(list1, list2);
+//    logList(newList5);
+    
+    logList(list5);
+    isPalindromeList(list5);
+    
+    logList(list6);
+    isPalindromeList(list6);
+    
+    logList(list2);
+    isPalindromeList(list2);
+    
     logList(list4);
-    struct ListNode *newList4 = reverseList(list4);
-    logList(newList4);
+    isPalindromeList(list4);
 }
 #pragma mark - main
 int main(int argc, const char * argv[]) {

@@ -38,4 +38,9 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n);
 /** 反转链表 */
 struct ListNode* reverseList(struct ListNode* head);
 
+/** 合并两个有序链表 */ 
+struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2);
+
+/** 回文链表 */
+int isPalindromeList(struct ListNode* head);
 #endif /* List_h */
