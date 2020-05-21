@@ -10,6 +10,7 @@
 		322FD4F62436F0A8004F725C /* Primary_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 322FD4F52436F0A8004F725C /* Primary_Array.c */; };
 		32602E5D245DA9F80003A93B /* Primary_String.c in Sources */ = {isa = PBXBuildFile; fileRef = 32602E5C245DA9F80003A93B /* Primary_String.c */; };
 		32B5188724697F040071AD30 /* List.c in Sources */ = {isa = PBXBuildFile; fileRef = 32B5188624697F040071AD30 /* List.c */; };
+		32C6BEEB247505D500C20374 /* BinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 32C6BEEA247505D500C20374 /* BinaryTree.c */; };
 		32D13AE121CCD6CB0039AE78 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 32D13AE021CCD6CB0039AE78 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		32602E5C245DA9F80003A93B /* Primary_String.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Primary_String.c; sourceTree = "<group>"; };
 		32B5188524697F040071AD30 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		32B5188624697F040071AD30 /* List.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = List.c; sourceTree = "<group>"; };
+		32C6BEE9247505D500C20374 /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
+		32C6BEEA247505D500C20374 /* BinaryTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BinaryTree.c; sourceTree = "<group>"; };
 		32D13ADD21CCD6CB0039AE78 /* LeetCode(C) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode(C)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D13AE021CCD6CB0039AE78 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +60,8 @@
 				32602E5C245DA9F80003A93B /* Primary_String.c */,
 				32B5188524697F040071AD30 /* List.h */,
 				32B5188624697F040071AD30 /* List.c */,
+				32C6BEE9247505D500C20374 /* BinaryTree.h */,
+				32C6BEEA247505D500C20374 /* BinaryTree.c */,
 			);
 			path = Primary;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C6BEEB247505D500C20374 /* BinaryTree.c in Sources */,
 				322FD4F62436F0A8004F725C /* Primary_Array.c in Sources */,
 				32D13AE121CCD6CB0039AE78 /* main.c in Sources */,
 				32602E5D245DA9F80003A93B /* Primary_String.c in Sources */,

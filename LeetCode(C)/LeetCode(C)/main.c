@@ -7,10 +7,12 @@
 //
 
 #include <stdio.h>
+#include <limits.h>
 #include "Primary/Primary_Array.h"
 
 #include "Primary_String.h"
 #include "List.h"
+#include "BinaryTree.h"
 
 void testValidSudoku(void) {
     char board[10][10] = {{'9','3','.','.','7','.','.','.','.'},{'6','.','.','1','9','5','.','.','.'},{'.','9','8','.','.','.','.','6','.'},{'8','.','.','.','6','.','.','.','3'},{'4','.','.','8','.','3','.','.','1'},{'7','.','.','.','2','.','.','.','6'},{'.','6','.','.','.','.','2','8','.'},{'.','.','.','4','1','9','.','.','5'},{'.','.','.','.','8','.','.','7','9'}};
@@ -172,13 +174,48 @@ void testList(void) {
     logList(list4);
     isPalindromeList(list4);
 }
+
+void testBinaryTree(void) {
+    
+    int arr1[7] = {3,9,20,NULL,NULL,15,7};
+    struct TreeNode* root1 = createBinaryTree(arr1, 7, 0);
+    
+    int arr2[3] = {2,1,3};
+    struct TreeNode* root2 = createBinaryTree(arr2, 3, 0);
+
+    int arr3[7] = {10,5,15,NULL,NULL,6,20};
+    struct TreeNode *root3 = createBinaryTree(arr3, 7, 0);
+    
+    long arr4[1] = {2147483647};
+    struct TreeNode *root4 = createBinaryTree(arr4, 1, 0);
+    
+    long arr5[2] = {2147483647,2147483647};
+    struct TreeNode *root5 = createBinaryTree(arr5, 2, 0);
+    
+    long arr6[7] = {1,2,2,3,4,NULL,3};
+    struct TreeNode *root6 = createBinaryTree(arr6, 7, 0);
+    
+    // 最大深度
+//    printf("Depth : %d",maxDepth(root1));
+    
+    // 验证二叉搜索树
+//    int res = isValidBST(root2);
+//    int res = isValidBST(root3);
+//    int res = isValidBST(root5);
+    
+    
+    // 对称二叉树
+    int res = isSymmetric(root6);
+}
 #pragma mark - main
 int main(int argc, const char * argv[]) {
 //    testPrimaryArray();
     
 //    testString();
     
-    testList();
+//    testList();
+    
+    testBinaryTree();
 
     return 0;
 }
