@@ -29,5 +29,8 @@ int maxDepth(struct TreeNode* root);
 int isValidBST(struct TreeNode* root);
 
 /** 对称二叉树 */
-int isSymmetric(struct TreeNode* root);
+int isSymmetric(struct TreeNode* root); // 递归
+int isSymmetricWithoutRecursion(struct TreeNode* root); // 非递归
+
+//void try1();
 #endif /* BinaryTree_h */

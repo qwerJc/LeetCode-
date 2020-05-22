@@ -192,7 +192,7 @@ void testBinaryTree(void) {
     long arr5[2] = {2147483647,2147483647};
     struct TreeNode *root5 = createBinaryTree(arr5, 2, 0);
     
-    long arr6[7] = {1,2,2,3,4,NULL,3};
+    long arr6[7] = {1,2,2,3,4,4,3};
     struct TreeNode *root6 = createBinaryTree(arr6, 7, 0);
     
     // 最大深度
@@ -205,7 +205,8 @@ void testBinaryTree(void) {
     
     
     // 对称二叉树
-    int res = isSymmetric(root6);
+//    int res = isSymmetric(root6);
+    int res = isSymmetricWithoutRecursion(root6);
 }
 #pragma mark - main
 int main(int argc, const char * argv[]) {
@@ -214,6 +215,17 @@ int main(int argc, const char * argv[]) {
 //    testString();
     
 //    testList();
+    
+//    int a[INT_MAX];
+//    a[0] = 1;
+//    printf("%d",a[0]);
+    
+//    int queue[INT_MAX];
+//    queue[0] = 1;
+//    queue[1] = 2;
+//    printf("%d",queue[0]);
+    
+    
     
     testBinaryTree();
 

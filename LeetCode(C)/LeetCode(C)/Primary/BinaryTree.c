@@ -9,7 +9,7 @@
 #include "BinaryTree.h"
 #include <limits.h>
 
-#pragma mark - 【初始化】
+#pragma mark - 【初始化】- 创建
 // 创建二叉树
 // {3,9,20,NULL,NULL,15,7};
 struct TreeNode* createBinaryTree(long a[],int lenth, int index) {
@@ -35,6 +35,25 @@ void PreOrder(struct TreeNode *root) {
     PreOrder(root->left);
     PreOrder(root->right);
 }
+
+#pragma mark - 【初始化】- 遍历
+//https://www.cnblogs.com/haimishasha/p/11520978.html
+
+// 非递归：广度遍历（层序遍历）
+// 借助 队列
+// 1.出队的时候也是成对成对的
+//        1.若都为空，继续；
+//        2.一个为空，返回false;
+//        3.不为空，比较当前值，值不等，返回false；
+// 2.确定入队顺序，每次入队都是成对成对的，如left.left， right.right ;left.rigth,right.left
+
+// 非递归：深度遍历
+// 借助 栈
+// 1.出栈的时候也是成对的 ，
+//        1.若都为空，继续；
+//        2.一个为空，返回false;
+//        3.不为空，比较当前值，值不等，返回false；
+// 2.确定入栈顺序，每次入栈都是成对成对的，如left.left， right.right ;left.rigth,right.left
 
 #pragma mark - 初级 - 最大深度
 int maxDepth(struct TreeNode* root) {
@@ -112,6 +131,8 @@ int inOrderTraverseBST(struct TreeNode* root,long *preNodeValue) {
 }
 
 #pragma mark - 初级 - 对称二叉树
+// 思路：变相的遍历
+
 int isSymmetric(struct TreeNode* root) {
     if (root == NULL) {
         return 1;
@@ -119,6 +140,7 @@ int isSymmetric(struct TreeNode* root) {
     return checkSymetric(root->left, root->right);
 }
 
+// 递归实现
 int checkSymetric(struct TreeNode* tree1,struct TreeNode *tree2) {
     if (tree1 == NULL && tree2 == NULL) {
         return 1;
@@ -135,4 +157,54 @@ int checkSymetric(struct TreeNode* tree1,struct TreeNode *tree2) {
     }
     
     return 0;
+}
+
+// 非递归实现
+// 思路：层序遍历(借助队列)
+// {1,2,2,3,4,4,3}
+int isSymmetricWithoutRecursion(struct TreeNode* root) {
+    
+    if (root == NULL) {
+        return 1;
+    }
+
+    int arrMax = 10000;
+    
+    struct TreeNode *queue[arrMax];
+    int front,rear = 0;// 定义队列的首尾指针
+    
+    queue[0] = root->left;
+    queue[1] = root->right;
+    front = 2;
+    
+    // 队列全部出栈
+    while (front != rear) {
+        struct TreeNode *left = queue[rear];
+        rear = (rear+1)%arrMax;
+        struct TreeNode *right = queue[rear];
+        rear = (rear+1)%arrMax;
+        
+        if (left == NULL && right == NULL) {
+            continue;
+        }
+        
+        if (left == NULL || right == NULL) {
+            return 0;
+        }
+        
+        printf("%d %d \n",left->val,right->val);
+        if (left->val != right->val) {
+            return 0;
+        }
+        
+        queue[front] = left->left;
+        front = (front+1)%arrMax;
+        queue[front] = right->right;
+        front = (front+1)%arrMax;
+        queue[front] = left->right;
+        front = (front+1)%arrMax;
+        queue[front] = right->left;
+        front = (front+1)%arrMax;
+    }
+    return 1;
 }

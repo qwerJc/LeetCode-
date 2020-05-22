@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		322FD4F62436F0A8004F725C /* Primary_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 322FD4F52436F0A8004F725C /* Primary_Array.c */; };
 		32602E5D245DA9F80003A93B /* Primary_String.c in Sources */ = {isa = PBXBuildFile; fileRef = 32602E5C245DA9F80003A93B /* Primary_String.c */; };
+		326E49CE2476883200A4C9E0 /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 326E49CD2476883200A4C9E0 /* Queue.c */; };
 		32B5188724697F040071AD30 /* List.c in Sources */ = {isa = PBXBuildFile; fileRef = 32B5188624697F040071AD30 /* List.c */; };
 		32C6BEEB247505D500C20374 /* BinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 32C6BEEA247505D500C20374 /* BinaryTree.c */; };
 		32D13AE121CCD6CB0039AE78 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 32D13AE021CCD6CB0039AE78 /* main.c */; };
@@ -32,6 +33,8 @@
 		322FD4FB243C1E54004F725C /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		32602E5B245DA9F80003A93B /* Primary_String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Primary_String.h; sourceTree = "<group>"; };
 		32602E5C245DA9F80003A93B /* Primary_String.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Primary_String.c; sourceTree = "<group>"; };
+		326E49CC2476883200A4C9E0 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		326E49CD2476883200A4C9E0 /* Queue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
 		32B5188524697F040071AD30 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		32B5188624697F040071AD30 /* List.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = List.c; sourceTree = "<group>"; };
 		32C6BEE9247505D500C20374 /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
@@ -66,6 +69,15 @@
 			path = Primary;
 			sourceTree = "<group>";
 		};
+		326E49CB2476881900A4C9E0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				326E49CC2476883200A4C9E0 /* Queue.h */,
+				326E49CD2476883200A4C9E0 /* Queue.c */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		32D13AD421CCD6CB0039AE78 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +99,7 @@
 			children = (
 				322FD4FB243C1E54004F725C /* Header.h */,
 				32D13AE021CCD6CB0039AE78 /* main.c */,
+				326E49CB2476881900A4C9E0 /* Tools */,
 				322FD4F72436F0B1004F725C /* Primary */,
 			);
 			path = "LeetCode(C)";
@@ -151,6 +164,7 @@
 				32C6BEEB247505D500C20374 /* BinaryTree.c in Sources */,
 				322FD4F62436F0A8004F725C /* Primary_Array.c in Sources */,
 				32D13AE121CCD6CB0039AE78 /* main.c in Sources */,
+				326E49CE2476883200A4C9E0 /* Queue.c in Sources */,
 				32602E5D245DA9F80003A93B /* Primary_String.c in Sources */,
 				32B5188724697F040071AD30 /* List.c in Sources */,
 			);
