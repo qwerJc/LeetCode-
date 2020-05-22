@@ -32,5 +32,6 @@ int isValidBST(struct TreeNode* root);
 int isSymmetric(struct TreeNode* root); // 递归
 int isSymmetricWithoutRecursion(struct TreeNode* root); // 非递归
 
-//void try1();
+/** 层序遍历二叉树 */
+int** levelOrder(struct TreeNode* root, int* returnSize, int** returnColumnSizes);
 #endif /* BinaryTree_h */

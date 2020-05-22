@@ -206,7 +206,11 @@ void testBinaryTree(void) {
     
     // 对称二叉树
 //    int res = isSymmetric(root6);
-    int res = isSymmetricWithoutRecursion(root6);
+//    int res = isSymmetricWithoutRecursion(root6);
+    
+    // 层序遍历二叉树
+    in
+    int **res = levelOrder(<#struct TreeNode *root#>, <#int *returnSize#>, <#int **returnColumnSizes#>)
 }
 #pragma mark - main
 int main(int argc, const char * argv[]) {
