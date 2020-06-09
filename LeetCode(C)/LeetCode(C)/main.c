@@ -49,11 +49,11 @@ void testPrimaryArray(void) {
 //    printIntArrWithoutLineBreak(returnArr, arrLength);
     
 /** 移动0 */
-//    int arrZero1[5] = {0,1,0,3,12};
-//    int arrZero2[1] = {0};
-//    int arrZero[15] = {0,5,0,1,0,0,0,0,3,7,0,0,12,0,0};
-//    moveZeroes(arr2, 5);
-//    printIntArrWithoutLineBreak(arrZero1, 5);
+    int arrZero1[5] = {7,1,0,3,12};
+    int arrZero2[1] = {0};
+    int arrZero[15] = {0,5,0,1,0,0,0,0,3,7,0,0,12,0,0};
+    moveZeroes(arrZero1, 5);
+    printIntArrWithoutLineBreak(arrZero1, 5);
 
     // 有效的数独
 //    testValidSudoku();
@@ -209,12 +209,11 @@ void testBinaryTree(void) {
 //    int res = isSymmetricWithoutRecursion(root6);
     
     // 层序遍历二叉树
-    in
-    int **res = levelOrder(<#struct TreeNode *root#>, <#int *returnSize#>, <#int **returnColumnSizes#>)
+
 }
 #pragma mark - main
 int main(int argc, const char * argv[]) {
-//    testPrimaryArray();
+    testPrimaryArray();
     
 //    testString();
     

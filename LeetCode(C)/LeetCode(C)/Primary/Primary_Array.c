@@ -70,7 +70,7 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     return arrResult;
 }
 
-#pragma mark - 移动0
+#pragma mark - 移动0（给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序）
 /**
  双指针，一个指0，一个指非0，两个交换
  */
@@ -79,6 +79,8 @@ void moveZeroes(int* nums, int numsSize) {
     int left = 0;
     int unZeroIndex = 0;
     for (unZeroIndex =0 ; unZeroIndex< numsSize; unZeroIndex++) {
+        // 这里通过循环来确定非0指针
+        // left指针不一定指向的都是0，如果遇到非0的数字，这样项关于arr【1】和arr【1】交换，没有影响
         if (nums[unZeroIndex] != 0 ) {
             /** 注意: 这里必须要交换，否则输入【1，2】这样不含0的数组会有问题*/
             int temp = nums[left];

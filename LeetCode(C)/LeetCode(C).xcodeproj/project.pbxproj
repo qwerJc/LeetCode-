@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		322FD4F62436F0A8004F725C /* Primary_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 322FD4F52436F0A8004F725C /* Primary_Array.c */; };
 		32602E5D245DA9F80003A93B /* Primary_String.c in Sources */ = {isa = PBXBuildFile; fileRef = 32602E5C245DA9F80003A93B /* Primary_String.c */; };
+		326A49B6248C70AC00A431C5 /* BubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 326A49B5248C70AC00A431C5 /* BubbleSort.c */; };
+		326A49B9248C838A00A431C5 /* SelectSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 326A49B8248C838A00A431C5 /* SelectSort.c */; };
+		326A49BC248C907500A431C5 /* InsertSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 326A49BB248C907500A431C5 /* InsertSort.c */; };
+		326A49BF248C96D400A431C5 /* ShellSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 326A49BE248C96D400A431C5 /* ShellSort.c */; };
 		326E49CE2476883200A4C9E0 /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 326E49CD2476883200A4C9E0 /* Queue.c */; };
 		32B5188724697F040071AD30 /* List.c in Sources */ = {isa = PBXBuildFile; fileRef = 32B5188624697F040071AD30 /* List.c */; };
 		32C6BEEB247505D500C20374 /* BinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 32C6BEEA247505D500C20374 /* BinaryTree.c */; };
@@ -33,6 +37,14 @@
 		322FD4FB243C1E54004F725C /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		32602E5B245DA9F80003A93B /* Primary_String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Primary_String.h; sourceTree = "<group>"; };
 		32602E5C245DA9F80003A93B /* Primary_String.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Primary_String.c; sourceTree = "<group>"; };
+		326A49B4248C70AC00A431C5 /* BubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
+		326A49B5248C70AC00A431C5 /* BubbleSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BubbleSort.c; sourceTree = "<group>"; };
+		326A49B7248C838A00A431C5 /* SelectSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectSort.h; sourceTree = "<group>"; };
+		326A49B8248C838A00A431C5 /* SelectSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SelectSort.c; sourceTree = "<group>"; };
+		326A49BA248C907500A431C5 /* InsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertSort.h; sourceTree = "<group>"; };
+		326A49BB248C907500A431C5 /* InsertSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = InsertSort.c; sourceTree = "<group>"; };
+		326A49BD248C96D400A431C5 /* ShellSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShellSort.h; sourceTree = "<group>"; };
+		326A49BE248C96D400A431C5 /* ShellSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ShellSort.c; sourceTree = "<group>"; };
 		326E49CC2476883200A4C9E0 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		326E49CD2476883200A4C9E0 /* Queue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
 		32B5188524697F040071AD30 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
@@ -69,6 +81,21 @@
 			path = Primary;
 			sourceTree = "<group>";
 		};
+		326A49B3248C707000A431C5 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				326A49B4248C70AC00A431C5 /* BubbleSort.h */,
+				326A49B5248C70AC00A431C5 /* BubbleSort.c */,
+				326A49B7248C838A00A431C5 /* SelectSort.h */,
+				326A49B8248C838A00A431C5 /* SelectSort.c */,
+				326A49BA248C907500A431C5 /* InsertSort.h */,
+				326A49BB248C907500A431C5 /* InsertSort.c */,
+				326A49BD248C96D400A431C5 /* ShellSort.h */,
+				326A49BE248C96D400A431C5 /* ShellSort.c */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
 		326E49CB2476881900A4C9E0 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +126,7 @@
 			children = (
 				322FD4FB243C1E54004F725C /* Header.h */,
 				32D13AE021CCD6CB0039AE78 /* main.c */,
+				326A49B3248C707000A431C5 /* Sort */,
 				326E49CB2476881900A4C9E0 /* Tools */,
 				322FD4F72436F0B1004F725C /* Primary */,
 			);
@@ -163,8 +191,12 @@
 			files = (
 				32C6BEEB247505D500C20374 /* BinaryTree.c in Sources */,
 				322FD4F62436F0A8004F725C /* Primary_Array.c in Sources */,
+				326A49BF248C96D400A431C5 /* ShellSort.c in Sources */,
+				326A49B6248C70AC00A431C5 /* BubbleSort.c in Sources */,
 				32D13AE121CCD6CB0039AE78 /* main.c in Sources */,
 				326E49CE2476883200A4C9E0 /* Queue.c in Sources */,
+				326A49BC248C907500A431C5 /* InsertSort.c in Sources */,
+				326A49B9248C838A00A431C5 /* SelectSort.c in Sources */,
 				32602E5D245DA9F80003A93B /* Primary_String.c in Sources */,
 				32B5188724697F040071AD30 /* List.c in Sources */,
 			);
