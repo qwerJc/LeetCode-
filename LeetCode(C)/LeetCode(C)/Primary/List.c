@@ -7,7 +7,7 @@
 //
 
 #include "List.h"
-
+#include <stdlib.h>
 #pragma mark - 【初始化】
 
 // 通过数组 头插法 初始化（头节点含数据）

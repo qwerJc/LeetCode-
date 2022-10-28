@@ -7,7 +7,7 @@
 //
 
 #include "Primary_Array.h"
-
+#include <stdlib.h>
 
 void printIntArr(int *arr, int arrSize) {
     for (int i =0; i<arrSize; i++) {
@@ -38,7 +38,7 @@ int intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnS
 int* plusOne(int* digits, int digitsSize, int* returnSize) {
     int length = 0;
     *returnSize = digitsSize;
-    int *arrResult = (int*)malloc(sizeof(int)*(digitsSize+1));
+    int *arrResult = malloc(sizeof(int)*(digitsSize+1));
     for (int i = digitsSize-1; i>=0; i--) {
         if (digits[i] == 9) {
             length++;

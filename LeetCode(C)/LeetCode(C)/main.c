@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <limits.h>
 #include "Primary/Primary_Array.h"
 
@@ -213,7 +214,7 @@ void testBinaryTree(void) {
 }
 #pragma mark - main
 int main(int argc, const char * argv[]) {
-    testPrimaryArray();
+//    testPrimaryArray();
     
 //    testString();
     
@@ -230,7 +231,31 @@ int main(int argc, const char * argv[]) {
     
     
     
-    testBinaryTree();
+//    testBinaryTree();
 
     return 0;
+}
+
+// 分割数组
+//https://leetcode.cn/problems/partition-array-into-disjoint-intervals/
+int partitionDisjoint(int* nums, int numsSize){
+    int left_index = 0;
+    int right_index = numsSize-1;
+
+    int left_max_value = nums[left_index];
+    int right_min_value = nums[right_index];
+
+    for (int i = 0; i < numsSize ; i++) {
+        int left_value = nums[left_index];
+        int right_value = nums[right_index];
+
+        if (left_max_value <= right_min_value) {
+            right_index--;
+            right_min_value = right_value<right_min_value ? right_value : right_min_value;
+        } else {
+            left_index++;
+            left_max_value = left_value>left_max_value ? left_value : left_max_value;
+        }
+    }
+    return left_index+1;
 }

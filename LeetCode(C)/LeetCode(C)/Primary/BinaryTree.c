@@ -8,6 +8,7 @@
 
 #include "BinaryTree.h"
 #include <limits.h>
+#include <stdlib.h>
 
 #pragma mark - 【初始化】- 创建
 // 创建二叉树
@@ -68,6 +69,34 @@ int maxDepth(struct TreeNode* root) {
         return rightDepth+1;
     }
 }
+#pragma mark - 初级 - 验证二叉搜索树 - 方法2 中序遍历
+// 方法二： 中序遍历二叉搜索树,传入上一节点的值，判断当前节点是否大于上一节点
+//    对于左子节点，一直进入递归，直到最左子为NULL，此时当前的节点为有值的最子节点，此时判断完了更新前一节点的值
+//    对于根节点，执行完了对左节点的判断后，此时preNodeValue已经被更新了，可以直接判断，判断完了更新前一节点的值
+//    对于右节点，执行完了根节点的判断，此时preNodeValue被更新，直接比较
+
+// 空间复杂度和时间负责度 和法一相同
+
+int inOrderTraverseBST(struct TreeNode* root,long *preNodeValue) {
+    if (root == NULL) {
+        return 1;
+    }
+    // 左
+    int lRes = inOrderTraverseBST(root->left,preNodeValue);
+
+    // 根
+    int rootRes = 0;
+    if (root->val> *preNodeValue) {
+        rootRes = 1;
+    }
+    
+    *preNodeValue = root->val;
+
+    int rRes = inOrderTraverseBST(root->right,preNodeValue);
+    
+    return lRes&&rootRes&&rRes;
+}
+
 
 #pragma mark - 初级 - 验证二叉搜索树 - 方法1:传入上下边界
 // 思路：
@@ -102,43 +131,9 @@ int checkBST(struct TreeNode* root, long lower, long upper) {
     }
     return 0;
 }
-#pragma mark - 初级 - 验证二叉搜索树 - 方法2 中序遍历
-// 方法二： 中序遍历二叉搜索树,传入上一节点的值，判断当前节点是否大于上一节点
-//    对于左子节点，一直进入递归，直到最左子为NULL，此时当前的节点为有值的最子节点，此时判断完了更新前一节点的值
-//    对于根节点，执行完了对左节点的判断后，此时preNodeValue已经被更新了，可以直接判断，判断完了更新前一节点的值
-//    对于右节点，执行完了根节点的判断，此时preNodeValue被更新，直接比较
-
-// 空间复杂度和时间负责度 和法一相同
-
-int inOrderTraverseBST(struct TreeNode* root,long *preNodeValue) {
-    if (root == NULL) {
-        return 1;
-    }
-    // 左
-    int lRes = inOrderTraverseBST(root->left,preNodeValue);
-
-    // 根
-    int rootRes = 0;
-    if (root->val> *preNodeValue) {
-        rootRes = 1;
-    }
-    
-    *preNodeValue = root->val;
-
-    int rRes = inOrderTraverseBST(root->right,preNodeValue);
-    
-    return lRes&&rootRes&&rRes;
-}
 
 #pragma mark - 初级 - 对称二叉树
 // 思路：变相的遍历
-
-int isSymmetric(struct TreeNode* root) {
-    if (root == NULL) {
-        return 1;
-    }
-    return checkSymetric(root->left, root->right);
-}
 
 // 递归实现
 int checkSymetric(struct TreeNode* tree1,struct TreeNode *tree2) {
@@ -158,6 +153,14 @@ int checkSymetric(struct TreeNode* tree1,struct TreeNode *tree2) {
     
     return 0;
 }
+
+int isSymmetric(struct TreeNode* root) {
+    if (root == NULL) {
+        return 1;
+    }
+    return checkSymetric(root->left, root->right);
+}
+
 
 // 非递归实现
 // 思路：层序遍历(借助队列)

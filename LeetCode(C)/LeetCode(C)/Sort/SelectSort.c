@@ -9,7 +9,7 @@
 #include "SelectSort.h"
 // 时间复杂度 O(n2)
 
-void swap(int *arr,int i, int j) {
+void sel_swap(int *arr,int i, int j) {
     int temp = arr[i];
     arr[i]=arr[j];
     arr[j]=temp;
@@ -26,7 +26,7 @@ void SelectSort(int* arr, int arraySize) {
         }
         // 如果min！=i，说明交换过
         if (min!=i) {
-            swap(arr, min, i);
+            sel_swap(arr, min, i);
         }
     }
 }
