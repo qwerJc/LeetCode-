@@ -14,8 +14,8 @@
             filePath = "LeetCode(C)/Primary/Primary_Array.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "isValidSudoku(board, boardSize, boardColSize)"
             landmarkType = "9">
          </BreakpointContent>
@@ -124,22 +124,6 @@
             startingLineNumber = "77"
             endingLineNumber = "77"
             landmarkName = "removeNthFromEnd(head, n)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1B538300-3828-4EF6-956C-05A082C93E1A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LeetCode(C)/Primary/Primary_Array.c"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "moveZeroes(nums, numsSize)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

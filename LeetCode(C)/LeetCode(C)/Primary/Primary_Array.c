@@ -31,6 +31,31 @@ int intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnS
     return 1;
 }
 
+#pragma mark  删除排序数组中的重复项
+/**
+ 双指针法：
+    如果右指针指向的值等于左指针指向的值，左指针不动。
+    如果右指针指向的值不等于左指针指向的值，那么左指针往右移一步，然后再把右指针指向的值赋给左指针
+*/
+int removeDuplicates(int* nums, int numsSize) {
+    if (numsSize == 0) {
+        return 0;
+    }
+    
+    int left = 0;
+    int right = 1;
+    for (; right<numsSize;) {
+        if (nums[left] == nums[right]) {
+            right++;
+        } else {
+            left++;
+            nums[left] = nums[right];
+        }
+    }
+
+    return left+1;
+}
+
 #pragma mark - 加一
 /**
  动态数组多一位，判断如果进位长度等于原长度，则整体进1

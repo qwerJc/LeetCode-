@@ -11,7 +11,7 @@
 #include <limits.h>
 #include "Primary/Primary_Array.h"
 
-#include "Primary_String.h"
+//#include "Primary_String.h"
 #include "List.h"
 #include "BinaryTree.h"
 
@@ -44,17 +44,23 @@ void testPrimaryArray(void) {
 //    int arr4[6] = {9,9,9,9,9,9};
 //    int *returnArr;
 
+/** 删除排序数组中重复项 */
+//    int arr_input[15] = {1,1,2};
+    int arr_input[15] = {0,0,1,1,1,2,2,3,3,4};
+    int new_size = removeDuplicates(arr_input, 10);
+    printIntArrWithoutLineBreak(arr_input, new_size);
+    
 /** 加1 */
 //    int arrLength;
 //    returnArr = plusOne(arr4, 6, &arrLength);
 //    printIntArrWithoutLineBreak(returnArr, arrLength);
     
 /** 移动0 */
-    int arrZero1[5] = {7,1,0,3,12};
-    int arrZero2[1] = {0};
-    int arrZero[15] = {0,5,0,1,0,0,0,0,3,7,0,0,12,0,0};
-    moveZeroes(arrZero1, 5);
-    printIntArrWithoutLineBreak(arrZero1, 5);
+//    int arrZero1[5] = {7,1,0,3,12};
+//    int arrZero2[1] = {0};
+//    int arrZero[15] = {0,5,0,1,0,0,0,0,3,7,0,0,12,0,0};
+//    moveZeroes(arrZero1, 5);
+//    printIntArrWithoutLineBreak(arrZero1, 5);
 
     // 有效的数独
 //    testValidSudoku();

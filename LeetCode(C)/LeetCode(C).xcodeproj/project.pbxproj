@@ -331,9 +331,12 @@
 		32D13AE621CCD6CB0039AE78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = SR4ZEKCW75;
+				PRODUCT_BUNDLE_IDENTIFIER = bjut.leetcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
