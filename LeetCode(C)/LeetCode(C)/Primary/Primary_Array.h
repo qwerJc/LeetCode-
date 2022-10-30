@@ -16,6 +16,9 @@ void printIntArrWithoutLineBreak(int *arr, int arrSize);
 /** 删除排序数组中的重复项*/
 int removeDuplicates(int* nums, int numsSize);
 
+/** 买卖股票的最佳时机 */
+int maxProfit(int* prices, int pricesSize);
+
 /** 两个数组的交集2*/
 int intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize);
 

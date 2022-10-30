@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		322FD4F62436F0A8004F725C /* Primary_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 322FD4F52436F0A8004F725C /* Primary_Array.c */; };
+		324DE278290EBD3200FBE41B /* Dynamicprogramming_Single.c in Sources */ = {isa = PBXBuildFile; fileRef = 324DE277290EBD3200FBE41B /* Dynamicprogramming_Single.c */; };
 		32602E5D245DA9F80003A93B /* Primary_String.c in Sources */ = {isa = PBXBuildFile; fileRef = 32602E5C245DA9F80003A93B /* Primary_String.c */; };
 		326A49B6248C70AC00A431C5 /* BubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 326A49B5248C70AC00A431C5 /* BubbleSort.c */; };
 		326A49B9248C838A00A431C5 /* SelectSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 326A49B8248C838A00A431C5 /* SelectSort.c */; };
@@ -35,6 +36,8 @@
 		322FD4F42436F0A8004F725C /* Primary_Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Primary_Array.h; sourceTree = "<group>"; };
 		322FD4F52436F0A8004F725C /* Primary_Array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Primary_Array.c; sourceTree = "<group>"; };
 		322FD4FB243C1E54004F725C /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		324DE276290EBD3200FBE41B /* Dynamicprogramming_Single.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Dynamicprogramming_Single.h; path = "LeetCode(C)/DP/Dynamicprogramming_Single.h"; sourceTree = SOURCE_ROOT; };
+		324DE277290EBD3200FBE41B /* Dynamicprogramming_Single.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Dynamicprogramming_Single.c; path = "LeetCode(C)/DP/Dynamicprogramming_Single.c"; sourceTree = SOURCE_ROOT; };
 		32602E5B245DA9F80003A93B /* Primary_String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Primary_String.h; sourceTree = "<group>"; };
 		32602E5C245DA9F80003A93B /* Primary_String.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Primary_String.c; sourceTree = "<group>"; };
 		326A49B4248C70AC00A431C5 /* BubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				322FD4F52436F0A8004F725C /* Primary_Array.c */,
 				32602E5B245DA9F80003A93B /* Primary_String.h */,
 				32602E5C245DA9F80003A93B /* Primary_String.c */,
+				324DE276290EBD3200FBE41B /* Dynamicprogramming_Single.h */,
+				324DE277290EBD3200FBE41B /* Dynamicprogramming_Single.c */,
 				32B5188524697F040071AD30 /* List.h */,
 				32B5188624697F040071AD30 /* List.c */,
 				32C6BEE9247505D500C20374 /* BinaryTree.h */,
@@ -195,6 +200,7 @@
 				326A49B6248C70AC00A431C5 /* BubbleSort.c in Sources */,
 				32D13AE121CCD6CB0039AE78 /* main.c in Sources */,
 				326E49CE2476883200A4C9E0 /* Queue.c in Sources */,
+				324DE278290EBD3200FBE41B /* Dynamicprogramming_Single.c in Sources */,
 				326A49BC248C907500A431C5 /* InsertSort.c in Sources */,
 				326A49B9248C838A00A431C5 /* SelectSort.c in Sources */,
 				32602E5D245DA9F80003A93B /* Primary_String.c in Sources */,
@@ -319,6 +325,7 @@
 		32D13AE521CCD6CB0039AE78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = ANTGV8UZTJ;

@@ -56,6 +56,37 @@ int removeDuplicates(int* nums, int numsSize) {
     return left+1;
 }
 
+#pragma mark  买卖股票最佳时机
+/**
+    注意 判断峰值时候的 要带上=的条件，以解决连续多个相同数字时无法判断出连续的问题
+*/
+int maxProfit(int* prices, int pricesSize) {
+    int sum = 0;
+    int low_value = prices[0];
+    for (int i = 1; i<pricesSize-1; i++) {
+        int last_value = prices[i-1];
+        int cur_value = prices[i];
+        int next_value = prices[i+1];
+        
+        // low
+        if (last_value >= cur_value && cur_value <= next_value) {
+            low_value = cur_value;
+        }
+        
+        // top
+        if (last_value <= cur_value && cur_value >= next_value) {
+            sum += cur_value - low_value;
+            low_value = next_value;
+        }
+    }
+    
+    if (prices[pricesSize-1] > low_value) {
+        sum += prices[pricesSize-1] - low_value;
+    }
+    
+    return sum;
+}
+
 #pragma mark - 加一
 /**
  动态数组多一位，判断如果进位长度等于原长度，则整体进1

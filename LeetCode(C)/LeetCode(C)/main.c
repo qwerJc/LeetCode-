@@ -46,9 +46,14 @@ void testPrimaryArray(void) {
 
 /** 删除排序数组中重复项 */
 //    int arr_input[15] = {1,1,2};
-    int arr_input[15] = {0,0,1,1,1,2,2,3,3,4};
-    int new_size = removeDuplicates(arr_input, 10);
-    printIntArrWithoutLineBreak(arr_input, new_size);
+//    int arr_input[15] = {0,0,1,1,1,2,2,3,3,4};
+//    int new_size = removeDuplicates(arr_input, 10);
+//    printIntArrWithoutLineBreak(arr_input, new_size);
+    
+/** 买卖股票最佳时机2*/
+    int arr_input[14] = {5,2,3,2,6,6,2,9,1,0,7,4,5,0};
+    int res = maxProfit(arr_input,14);
+    printf("res %d \n",res);
     
 /** 加1 */
 //    int arrLength;
@@ -220,7 +225,7 @@ void testBinaryTree(void) {
 }
 #pragma mark - main
 int main(int argc, const char * argv[]) {
-//    testPrimaryArray();
+    testPrimaryArray();
     
 //    testString();
     
