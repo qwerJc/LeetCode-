@@ -14,8 +14,8 @@
             filePath = "LeetCode(C)/Primary/Primary_Array.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "isValidSudoku(board, boardSize, boardColSize)"
             landmarkType = "9">
          </BreakpointContent>
@@ -121,9 +121,73 @@
             filePath = "LeetCode(C)/Primary/List.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "removeNthFromEnd(head, n)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB90726D-A1B2-4AEE-BFAD-7720CDD41FED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCode(C)/Primary/Primary_Array.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "maxProfit(prices, pricesSize)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B4AA190-C1F1-4EAB-BB4E-1610F7EF643C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCode(C)/Primary/Primary_Array.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
             endingLineNumber = "77"
-            landmarkName = "removeNthFromEnd(head, n)"
+            landmarkName = "maxProfit(prices, pricesSize)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E46AFA3-1929-4526-B4AB-BC7ABD88AEAB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwordOffer/SwordOffer.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
+            landmarkName = "minNumberInRotateArray011(rotateArray, rotateArrayLen)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54EB8097-E1A4-4D36-BE47-B3BE90668E47"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwordOffer/SwordOffer.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "315"
+            endingLineNumber = "315"
+            landmarkName = "cutRope14(number)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

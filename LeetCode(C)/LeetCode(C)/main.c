@@ -14,6 +14,7 @@
 //#include "Primary_String.h"
 #include "List.h"
 #include "BinaryTree.h"
+#include "SwordOffer.h"
 
 void testValidSudoku(void) {
     char board[10][10] = {{'9','3','.','.','7','.','.','.','.'},{'6','.','.','1','9','5','.','.','.'},{'.','9','8','.','.','.','.','6','.'},{'8','.','.','.','6','.','.','.','3'},{'4','.','.','8','.','3','.','.','1'},{'7','.','.','.','2','.','.','.','6'},{'.','6','.','.','.','.','2','8','.'},{'.','.','.','4','1','9','.','.','5'},{'.','.','.','.','8','.','.','7','9'}};
@@ -35,8 +36,30 @@ void testValidSudoku(void) {
     
     isValidSudoku(s, 9, colSize);
 }
-
 // 函数声明
+void testSwordOffer() {
+    int arr1[4] = {2,1,3,2};
+//    int res = duplicate003(arr1, 4);
+//
+//    struct ListNode *head = (struct ListNode*)malloc(sizeof(struct ListNode));
+//    struct ListNode *cur = head;
+//    for (int i = 1; i<4; i++) {
+//        struct ListNode *next = (struct ListNode*)malloc(sizeof(struct ListNode));
+//        next->val = i;
+//        cur->next = next;
+//        cur = next;
+//    }
+//    cur->next = NULL;
+    
+    int arr2[5] = {1,0,1,1,1};
+//    struct ListNode *list1 = createListWithTailInsert(arr2, 3);
+//
+//    int* arr = printListFromTailToHead006(head->next,arr1);
+    
+//    int res = minNumberInRotateArray011(arr2, 5);
+    int res = cutRope14(8);
+}
+
 void testPrimaryArray(void) {
 //    int arr1[3] = {4,9,5};
 //    int arr2[5] = {9,4,9,8,4};
@@ -225,7 +248,9 @@ void testBinaryTree(void) {
 }
 #pragma mark - main
 int main(int argc, const char * argv[]) {
-    testPrimaryArray();
+     testSwordOffer();
+
+    //    testPrimaryArray();
     
 //    testString();
     

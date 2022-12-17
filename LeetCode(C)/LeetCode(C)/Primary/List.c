@@ -28,7 +28,20 @@ struct ListNode* createListWithHeadInsert(int a[],int lenth) {
     return head;
 }
 
-// 通过数组 尾插法 初始化（头节点含数据）
+// 通过数组 尾插法 初始化（头节不含数据）
+/** 错误的创建方式（头节点包含数据）
+ struct ListNode *head = (struct ListNode*)malloc(sizeof(struct ListNode));
+ struct ListNode *cur = head;
+ for (int i = 1; i<4; i++) {
+     cur->val = i;
+     struct ListNode *next = (struct ListNode*)malloc(sizeof(struct ListNode));
+     next->val = -1;
+     cur->next = next;
+     cur = next;
+ }
+ cur = NULL;
+ // 将cur置空，但是当前节点已经创建出内存，因此对于head指针，里面依旧有4个元素，所以错误
+*/
 struct ListNode* createListWithTailInsert(int a[],int lenth) {
     struct ListNode *head = (struct ListNode*)malloc(sizeof(struct ListNode));
     

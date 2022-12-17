@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		322FD4F62436F0A8004F725C /* Primary_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 322FD4F52436F0A8004F725C /* Primary_Array.c */; };
 		324DE278290EBD3200FBE41B /* Dynamicprogramming_Single.c in Sources */ = {isa = PBXBuildFile; fileRef = 324DE277290EBD3200FBE41B /* Dynamicprogramming_Single.c */; };
+		325FC74E2933979E009BE4F3 /* HeapSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 325FC74D2933979E009BE4F3 /* HeapSort.c */; };
+		325FC7642934D694009BE4F3 /* QuickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 325FC7632934D694009BE4F3 /* QuickSort.c */; };
 		32602E5D245DA9F80003A93B /* Primary_String.c in Sources */ = {isa = PBXBuildFile; fileRef = 32602E5C245DA9F80003A93B /* Primary_String.c */; };
 		326A49B6248C70AC00A431C5 /* BubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 326A49B5248C70AC00A431C5 /* BubbleSort.c */; };
 		326A49B9248C838A00A431C5 /* SelectSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 326A49B8248C838A00A431C5 /* SelectSort.c */; };
@@ -18,6 +20,7 @@
 		32B5188724697F040071AD30 /* List.c in Sources */ = {isa = PBXBuildFile; fileRef = 32B5188624697F040071AD30 /* List.c */; };
 		32C6BEEB247505D500C20374 /* BinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 32C6BEEA247505D500C20374 /* BinaryTree.c */; };
 		32D13AE121CCD6CB0039AE78 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 32D13AE021CCD6CB0039AE78 /* main.c */; };
+		32F51C9A292679E3008EADF6 /* SwordOffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 32F51C99292679E3008EADF6 /* SwordOffer.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +41,10 @@
 		322FD4FB243C1E54004F725C /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		324DE276290EBD3200FBE41B /* Dynamicprogramming_Single.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Dynamicprogramming_Single.h; path = "LeetCode(C)/DP/Dynamicprogramming_Single.h"; sourceTree = SOURCE_ROOT; };
 		324DE277290EBD3200FBE41B /* Dynamicprogramming_Single.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Dynamicprogramming_Single.c; path = "LeetCode(C)/DP/Dynamicprogramming_Single.c"; sourceTree = SOURCE_ROOT; };
+		325FC74C2933979E009BE4F3 /* HeapSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeapSort.h; sourceTree = "<group>"; };
+		325FC74D2933979E009BE4F3 /* HeapSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HeapSort.c; sourceTree = "<group>"; };
+		325FC7622934D694009BE4F3 /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		325FC7632934D694009BE4F3 /* QuickSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QuickSort.c; sourceTree = "<group>"; };
 		32602E5B245DA9F80003A93B /* Primary_String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Primary_String.h; sourceTree = "<group>"; };
 		32602E5C245DA9F80003A93B /* Primary_String.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Primary_String.c; sourceTree = "<group>"; };
 		326A49B4248C70AC00A431C5 /* BubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
@@ -56,6 +63,8 @@
 		32C6BEEA247505D500C20374 /* BinaryTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BinaryTree.c; sourceTree = "<group>"; };
 		32D13ADD21CCD6CB0039AE78 /* LeetCode(C) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode(C)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D13AE021CCD6CB0039AE78 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		32F51C98292679E3008EADF6 /* SwordOffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwordOffer.h; sourceTree = "<group>"; };
+		32F51C99292679E3008EADF6 /* SwordOffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SwordOffer.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +106,10 @@
 				326A49BB248C907500A431C5 /* InsertSort.c */,
 				326A49BD248C96D400A431C5 /* ShellSort.h */,
 				326A49BE248C96D400A431C5 /* ShellSort.c */,
+				325FC74C2933979E009BE4F3 /* HeapSort.h */,
+				325FC74D2933979E009BE4F3 /* HeapSort.c */,
+				325FC7622934D694009BE4F3 /* QuickSort.h */,
+				325FC7632934D694009BE4F3 /* QuickSort.c */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -113,6 +126,7 @@
 		32D13AD421CCD6CB0039AE78 = {
 			isa = PBXGroup;
 			children = (
+				32F51C97292672EB008EADF6 /* SwordOffer */,
 				32D13ADF21CCD6CB0039AE78 /* LeetCode(C) */,
 				32D13ADE21CCD6CB0039AE78 /* Products */,
 			);
@@ -136,6 +150,15 @@
 				322FD4F72436F0B1004F725C /* Primary */,
 			);
 			path = "LeetCode(C)";
+			sourceTree = "<group>";
+		};
+		32F51C97292672EB008EADF6 /* SwordOffer */ = {
+			isa = PBXGroup;
+			children = (
+				32F51C98292679E3008EADF6 /* SwordOffer.h */,
+				32F51C99292679E3008EADF6 /* SwordOffer.c */,
+			);
+			path = SwordOffer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +227,10 @@
 				326A49BC248C907500A431C5 /* InsertSort.c in Sources */,
 				326A49B9248C838A00A431C5 /* SelectSort.c in Sources */,
 				32602E5D245DA9F80003A93B /* Primary_String.c in Sources */,
+				32F51C9A292679E3008EADF6 /* SwordOffer.c in Sources */,
 				32B5188724697F040071AD30 /* List.c in Sources */,
+				325FC74E2933979E009BE4F3 /* HeapSort.c in Sources */,
+				325FC7642934D694009BE4F3 /* QuickSort.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

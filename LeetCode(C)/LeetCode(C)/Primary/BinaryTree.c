@@ -27,7 +27,9 @@ struct TreeNode* createBinaryTree(long a[],int lenth, int index) {
     return node;
 }
 
-// 前序
+// 前序(preorder) 根左右
+// 中序(inorder) 左根右
+// 后序(postorder) 左右根
 void PreOrder(struct TreeNode *root) {
     if (root == NULL) {
         return;
@@ -75,6 +77,7 @@ int maxDepth(struct TreeNode* root) {
 //    对于根节点，执行完了对左节点的判断后，此时preNodeValue已经被更新了，可以直接判断，判断完了更新前一节点的值
 //    对于右节点，执行完了根节点的判断，此时preNodeValue被更新，直接比较
 
+// 由于二叉搜索树的性质，左子<根<右子，因此中序出来的结果一定是升序
 // 空间复杂度和时间负责度 和法一相同
 
 int inOrderTraverseBST(struct TreeNode* root,long *preNodeValue) {
@@ -215,3 +218,13 @@ int isSymmetricWithoutRecursion(struct TreeNode* root) {
 //int** levelOrder(struct TreeNode* root, int* returnSize, int** returnColumnSizes){
 //
 //}
+
+#pragma mark - 面试 - 对称二叉树
+/*（一）求任意两个节点的公共父节点
+思路：1、首先，用栈去记录root，依次往下去遍历找到p,q两个字节点的父节点
+ 2、比较从根节点比较两个路径，第一个不同的则为公共父节点
+*/
+
+/*（二）判读 平衡二叉树（叶节点的差不大于一）
+
+ */

@@ -11,7 +11,7 @@
 
 void insertSort(int* arr, int arraySize) {
     int i,j;
-    for (i=2; i<arraySize; i++) {
+    for (i=1; i<arraySize; i++) {
         
         if (arr[i]<arr[i-1]) {
             // 临时记录遇到的小于已排序的数字
