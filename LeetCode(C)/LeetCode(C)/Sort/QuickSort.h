@@ -10,5 +10,14 @@
 #define QuickSort_h
 
 #include <stdio.h>
+#include <vector>
 
+class QuickSort {
+public:
+    // 快排
+    void quick_sort(std::vector<int>& vec, int start, int end);
+    int quick_sort_partition(std::vector<int>& vec, int start, int end);
+private:
+    void swap(std::vector<int>& vec, int index1, int index2);
+}
 #endif /* QuickSort_h */

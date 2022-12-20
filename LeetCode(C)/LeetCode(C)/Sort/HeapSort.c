@@ -7,7 +7,7 @@
 //
 
 #include "HeapSort.h"
-
+// 图示：https://www.zhihu.com/people/developer1024
 
 void swap_heap(int *arr,int i, int j) {
     int temp = arr[i];
@@ -42,8 +42,8 @@ void HeapAdjuset(int *arr,int index,int size) {
 }
 
 /**
-  堆排序（完全二叉树：左子<右子<父）
-    核心：1、由一个无序序列构建成一个堆
+  堆排序（最大堆：左子<右子<父）
+    核心：1、由一个无序序列构建成一个堆（层序）
          2、基于构建的堆，调整元素
  */
 void HeapSort(int* arr, int arraySize) {
@@ -55,7 +55,7 @@ void HeapSort(int* arr, int arraySize) {
     
     // 由于每次构建完后，堆顶一定为最大元素，因此将堆顶与最后一个元素交换，以及来逐渐构建从小到大的升序
     for (int i=arraySize; i>0; i--) {
-        // 交换堆顶与当前最后一个元素
+        // 交换堆顶与当前最后一个元素（将最大元素移至末尾，以此保证从后往前是从大到小）
         swap_heap(arr, i, 1);
         // 重新调整【1..i-1】为最大堆
         HeapAdjuset(arr, 1, i-1);

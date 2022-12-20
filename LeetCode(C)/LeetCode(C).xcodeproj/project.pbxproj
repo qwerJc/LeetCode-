@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		322FD4F62436F0A8004F725C /* Primary_Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 322FD4F52436F0A8004F725C /* Primary_Array.c */; };
+		324447EE295204B9008AA2A3 /* MergeSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 324447EC295204B9008AA2A3 /* MergeSort.cpp */; };
 		324DE278290EBD3200FBE41B /* Dynamicprogramming_Single.c in Sources */ = {isa = PBXBuildFile; fileRef = 324DE277290EBD3200FBE41B /* Dynamicprogramming_Single.c */; };
 		325FC74E2933979E009BE4F3 /* HeapSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 325FC74D2933979E009BE4F3 /* HeapSort.c */; };
-		325FC7642934D694009BE4F3 /* QuickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 325FC7632934D694009BE4F3 /* QuickSort.c */; };
+		325FC7642934D694009BE4F3 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 325FC7632934D694009BE4F3 /* QuickSort.cpp */; };
 		32602E5D245DA9F80003A93B /* Primary_String.c in Sources */ = {isa = PBXBuildFile; fileRef = 32602E5C245DA9F80003A93B /* Primary_String.c */; };
 		326A49B6248C70AC00A431C5 /* BubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 326A49B5248C70AC00A431C5 /* BubbleSort.c */; };
 		326A49B9248C838A00A431C5 /* SelectSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 326A49B8248C838A00A431C5 /* SelectSort.c */; };
@@ -39,12 +40,14 @@
 		322FD4F42436F0A8004F725C /* Primary_Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Primary_Array.h; sourceTree = "<group>"; };
 		322FD4F52436F0A8004F725C /* Primary_Array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Primary_Array.c; sourceTree = "<group>"; };
 		322FD4FB243C1E54004F725C /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		324447EC295204B9008AA2A3 /* MergeSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MergeSort.cpp; sourceTree = "<group>"; };
+		324447ED295204B9008AA2A3 /* MergeSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MergeSort.hpp; sourceTree = "<group>"; };
 		324DE276290EBD3200FBE41B /* Dynamicprogramming_Single.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Dynamicprogramming_Single.h; path = "LeetCode(C)/DP/Dynamicprogramming_Single.h"; sourceTree = SOURCE_ROOT; };
 		324DE277290EBD3200FBE41B /* Dynamicprogramming_Single.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Dynamicprogramming_Single.c; path = "LeetCode(C)/DP/Dynamicprogramming_Single.c"; sourceTree = SOURCE_ROOT; };
 		325FC74C2933979E009BE4F3 /* HeapSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeapSort.h; sourceTree = "<group>"; };
 		325FC74D2933979E009BE4F3 /* HeapSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HeapSort.c; sourceTree = "<group>"; };
 		325FC7622934D694009BE4F3 /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
-		325FC7632934D694009BE4F3 /* QuickSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QuickSort.c; sourceTree = "<group>"; };
+		325FC7632934D694009BE4F3 /* QuickSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
 		32602E5B245DA9F80003A93B /* Primary_String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Primary_String.h; sourceTree = "<group>"; };
 		32602E5C245DA9F80003A93B /* Primary_String.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Primary_String.c; sourceTree = "<group>"; };
 		326A49B4248C70AC00A431C5 /* BubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
@@ -109,7 +112,9 @@
 				325FC74C2933979E009BE4F3 /* HeapSort.h */,
 				325FC74D2933979E009BE4F3 /* HeapSort.c */,
 				325FC7622934D694009BE4F3 /* QuickSort.h */,
-				325FC7632934D694009BE4F3 /* QuickSort.c */,
+				325FC7632934D694009BE4F3 /* QuickSort.cpp */,
+				324447EC295204B9008AA2A3 /* MergeSort.cpp */,
+				324447ED295204B9008AA2A3 /* MergeSort.hpp */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -230,7 +235,8 @@
 				32F51C9A292679E3008EADF6 /* SwordOffer.c in Sources */,
 				32B5188724697F040071AD30 /* List.c in Sources */,
 				325FC74E2933979E009BE4F3 /* HeapSort.c in Sources */,
-				325FC7642934D694009BE4F3 /* QuickSort.c in Sources */,
+				324447EE295204B9008AA2A3 /* MergeSort.cpp in Sources */,
+				325FC7642934D694009BE4F3 /* QuickSort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
