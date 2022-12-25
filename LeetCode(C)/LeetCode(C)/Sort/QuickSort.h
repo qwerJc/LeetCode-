@@ -19,5 +19,5 @@ public:
     int quick_sort_partition(std::vector<int>& vec, int start, int end);
 private:
     void swap(std::vector<int>& vec, int index1, int index2);
-}
+};
 #endif /* QuickSort_h */

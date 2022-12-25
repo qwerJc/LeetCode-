@@ -10,6 +10,8 @@
 #include <stdlib.h>
 #include <limits.h>
 #include "Primary/Primary_Array.h"
+//#include "DynamicProgram.h"
+#include "QuickSort.h"
 
 //#include "Primary_String.h"
 #include "List.h"

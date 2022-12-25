@@ -1,4 +1,15 @@
-#include <vector>
+//
+//  DynamicProgram.h
+//  LeetCode(C)
+//
+//  Created by 贾辰 on 2022/12/25.
+//  Copyright © 2022 贾辰. All rights reserved.
+//
+
+#ifndef DynamicProgram_h
+#define DynamicProgram_h
+
+#include <stdio.h>
 
 class Solution {
 public:
@@ -29,9 +40,7 @@ public:
     }
     
     // BM65 最长公共子序列(二)
-    // 描述:给定两个字符串str1和str2，输出两个字符串的最长公共子序列。如果最长公共子序列为空，则返回"-1"。目前给出的数据，仅仅会存在一个最长的公共子序列
-//    输入：
-//    "1A2C3D4B56","B1D23A456A"
-//    返回值：
-//    "123456"
 };
+
+
+#endif /* DynamicProgram_h */

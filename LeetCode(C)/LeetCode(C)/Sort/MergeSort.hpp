@@ -18,6 +18,6 @@ public:
     void merge_sort(std::vector<int>& vec, int left, int right);
     void merge_sort_merge(std::vector<int>& vec,int left,int mid,int right);
 
-}
+};
 
 #endif /* MergeSort_hpp */
